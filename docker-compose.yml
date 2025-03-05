@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  youtube-streamer:
+    build: .
+    ports:
+      - "3234:3234"
+    restart: unless-stopped
