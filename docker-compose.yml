@@ -1,6 +1,8 @@
 version: '3.8'
+
 services:
-  youtube-streamer:
+  yt-downloader:
+    container_name: yt-downloader
     build: .
     ports:
       - "3234:3234"
