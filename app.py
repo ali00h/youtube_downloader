@@ -18,7 +18,7 @@ def download_video():
     try:
         subprocess.run([
             'yt-dlp',
-            '-f', 'bestvideo+bestaudio',
+            '-f', 'worstvideo+worstaudio',
             '--merge-output-format', 'mp4',
             '-o', f'{temp_dir}/%(title)s.%(ext)s',
             video_url
